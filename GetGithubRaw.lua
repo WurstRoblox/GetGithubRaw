@@ -28,8 +28,8 @@ local data = http:JSONDecode(response.Body)
 local raw_data = data.content
 
 -- Decode the base64-encoded raw data
-local decoded_data = base64.decode(raw_data)
+local decoded_data = game:GetService("HttpService"):Base64Decode(raw_data)
 
 -- Print the raw data to the output
-print(decoded_data)
+_G.Src = decoded_data
 end
