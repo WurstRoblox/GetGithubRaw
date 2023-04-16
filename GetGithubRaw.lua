@@ -1,6 +1,5 @@
 function load(one,two,three,four)
 local http = game:GetService("HttpService")
-local base64 = require("base64")
 
 -- Replace the following variables with your own values
 local username = one
